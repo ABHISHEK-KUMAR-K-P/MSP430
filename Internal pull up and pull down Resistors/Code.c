@@ -24,11 +24,11 @@ void main(void) {
 
         if(P2IN & BIT3)         // If PL SW is pressed
 
-            P1OUT &= ~BIT0;     // LED GREEN ON
+            P1OUT &= ~BIT0;     // LED GREEN ON (LED's cathode connected to GPIO pin)
 
         else if(!(P2IN & BIT5)) // If NL SW is pressed
 
-            P1OUT |= BIT1;      // LED PINK ON
+            P1OUT |= BIT1;      // LED PINK ON (LED's anode connected to GPIO pin)
 
         else{
 
