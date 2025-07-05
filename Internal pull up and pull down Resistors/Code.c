@@ -22,11 +22,11 @@ void main(void) {
 
     {
 
-        if(P2IN & BIT3)         // If NL SW is pressed
+        if(P2IN & BIT3)         // If PL SW is pressed
 
             P1OUT &= ~BIT0;     // LED GREEN ON
 
-        else if(!(P2IN & BIT5)) // If PL SW is pressed
+        else if(!(P2IN & BIT5)) // If NL SW is pressed
 
             P1OUT |= BIT1;      // LED PINK ON
 
